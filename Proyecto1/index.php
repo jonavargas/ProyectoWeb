@@ -12,12 +12,8 @@
 			<input type="text" name="formName" maxlength="50"/>
 		</p>
 		<p>
-			Last name 1:<bsr>
-			<input type="text" name="formLastName1" maxlength="50" />
-		</p>
-		<p>
-			Last name 2:<bsr>
-			<input type="text" name="formLastName2" maxlength="50" />
+			Last name:<bsr>
+			<input type="text" name="formLastName" maxlength="50" />
 		</p>
 		<p>
 			Email:<bsr>
