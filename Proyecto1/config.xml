@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Parameters>
+<Connect>
+	<Server>localhost</Server>
+	<User>root</User>
+	<Password></Password>
+	<DB>registers</DB>
+</Connect>
+</Parameters>
