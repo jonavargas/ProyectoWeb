@@ -6,4 +6,10 @@
 	<Password></Password>
 	<DB>registers</DB>
 </Connect>
+<Email>
+	<From>jvargasa91@gmail.com</From>
+	<Password>206810945</Password>
+	<Server>smtp.gmail.com</Server>
+	<To>jonavargas2012@gmail.com</To>
+</Email>
 </Parameters>
