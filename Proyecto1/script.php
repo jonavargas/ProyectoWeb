@@ -1,6 +1,6 @@
 <?php
-include('phpmailer/class.phpmailer.php');   //Se hacen los includes de las clases "class.phpMailer.php" y "class.smtp.php" respectivamente.
-include('phpmailer/class.smtp.php');
+require('phpmailer/class.phpmailer.php');   //Se hacen los includes de las clases "class.phpMailer.php" y "class.smtp.php" respectivamente.
+require('phpmailer/class.smtp.php');
 
 function getXML(){
     global $argv;                           //Declaración de variables.

@@ -1,0 +1,33 @@
+body {
+    background: url('../img/image.jpg')
+}
+h1 {
+    color: #006697;
+    font-family:'Myriad-Pro', 'Myriad', helvetica, arial, sans-serif;
+    font-size: 350%;
+    letter-spacing: 1px;
+    margin-top: 0;
+    position: relative;
+    text-shadow: 2px 3px 3px #040657;
+    -webkit-text-stroke: 1px white;
+}
+.btn{
+	margin-top: -5%;
+	margin-left: 45%;
+}
+.Container{
+    text-align: center;
+    margin-top: 2%
+}
+.form-control {
+    margin-left: 8%;
+    width: 20%;
+}
+.form-div{
+	margin-top: 4%;
+}
+.form-group{
+	font-size: 140%;
+	margin-top: 1.5%;
+	margin-left: 10%;
+}
