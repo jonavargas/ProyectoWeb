@@ -1,5 +1,5 @@
 <?php
-require('phpmailer/class.phpmailer.php');   //Se hacen los includes de las clases "class.phpMailer.php" y "class.smtp.php" respectivamente.
+require('phpmailer/class.phpmailer.php');   //Se hacen los requires de las clases "class.phpMailer.php" y "class.smtp.php" respectivamente.
 require('phpmailer/class.smtp.php');
 
 function getXML(){
@@ -46,18 +46,18 @@ function connectDB(){                       //Función encargada de conectarse a
 }
 
 date_default_timezone_set("America/Costa_Rica");        //Especifica la zona horaria de "América Central/Costa Rica".
-$name_csv = date("d").date("m").date("Y");              //Asigna la fecha actual a una variable.
+$name_csv = date("d").date("m").date("Y");              //Asigna la fecha actual a la variable "$name_csv".
 
 if(!file_exists($name_csv . ".csv")){                   //Valida que el archivo csv exista para continuar con el insert en la base de datos.
     echo " Did not find any file to insert into database!!!";
     die;
 }
 
-$registersMade = 0;                                       //Contador de registros ingresados por día.
+$registersMade = 0;                                     //Contador de registros ingresados por día.
 $csv = fopen($name_csv . ".csv", "r");                  //Abre el archivo "csv" y lo asigna a la variable "$csv".
 while (($data = fgetcsv($csv, 1000, ";")) !== FALSE) {  //Almacena los datos de una línea completa del "csv" en el array "data".
     $num = count($data);                                //Contador de campos del array "data".
-    $registersMade++;                                     //Aumento del contador.
+    $registersMade++;                                   //Aumento del contador.
     $insert = "INSERT INTO students (Name,LastName,Email,Phone,ID) VALUES ("; //Se almacena en la variable "$insert" los nombres de los campos de la tabla de la base de datos.
     
     for ($i = 0; $i < $num; $i++) {                     //Se colocan los campos de la cadena, si aún no es el último campo, le agrega la coma (,) para separar los datos.
@@ -113,5 +113,4 @@ echo "Error: " . $mail->ErrorInfo;
 } else { 
 echo "\n The message was successfully sent to the email: " . $To; 
 }
-
 ?>

@@ -11,6 +11,16 @@ h1 {
     text-shadow: 2px 3px 3px #040657;
     -webkit-text-stroke: 1px white;
 }
+h2{
+    color: #128521;
+    font-size: 100%;
+    margin-top: 15%;
+    text-shadow: 2px 3px 3px #008000;
+    -webkit-text-stroke: 1px white;
+}
+.body2{
+    background: url('../img/image1.jpg')
+}
 .btn{
 	margin-top: -5%;
 	margin-left: 45%;
